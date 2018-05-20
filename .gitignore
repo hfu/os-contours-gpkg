@@ -1,3 +1,7 @@
+OSTerrain50_Contours.gpkg
+*.ndjson
+*.mbtiles
+
 # Logs
 logs
 *.log
