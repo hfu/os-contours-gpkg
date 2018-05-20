@@ -16,3 +16,10 @@ $ curl -C - -v -O -# https://s3-eu-west-1.amazonaws.com/os-open-data/os-open-map
 
 # note
 The output of this program needs acknowledgement "[Contains OS data © Crown copyright and database right (year)](https://www.ordnancesurvey.co.uk/business-and-government/licensing/using-creating-data-with-os-products/os-opendata.html)"
+
+# track records
+## OSTerrain50_Contours.gpkg
+- OSTerrain50_Contours.gpkg 3.0GB (3194818560B)
+- ndjson 6.6GB (7036283423B)
+- mbtiles 491MB (514772992B)
+

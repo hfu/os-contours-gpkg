@@ -1,6 +1,6 @@
 {
   gpkgs: [
-//    OPENMAP_LOCAL_October17.gpkg
+    OPENMAP_LOCAL_October17.gpkg
     OSTerrain50_Contours.gpkg
   ]
 }

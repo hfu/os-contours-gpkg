@@ -15,6 +15,23 @@ const inverse = (geometry) => {
         geometry.coordinates[i] = local.inverse(geometry.coordinates[i])
       }
       break
+    case 'Polygon':
+      for (let i in geometry.coordinates) {
+        for(let j in geometry.coordinates[i]) {
+          geometry.coordinates[i][j] = local.inverse(geometry.coordinates[i][j])
+        }
+      }
+      break
+    case 'MultiPolygon':
+      for (let i in geometry.coordinates) {
+        for (let j in geometry.coordinates[i]) {
+          for (let k in geometry.coordinates[i][j]) {
+            geometry.coordinates[i][j][k] = 
+              local.inverse(geometry.coordinates[i][j][k])
+          }
+        }
+      }
+      break
     default:
       throw `${geometry.type} not supported.`
   }
@@ -31,7 +48,7 @@ const put = (fr) => {
     if (fr.values[k]) properties[k] = fr.values[k]
   }
   delete properties[fr.getGeometryColumn().name]
-  let minzoom = 12
+  let minzoom = 14
   if (properties.feat_type === 'ContourLine') {
     if (properties.prop_value % 400 === 0) {
       minzoom = 10
