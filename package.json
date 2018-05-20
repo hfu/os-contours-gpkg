@@ -1,0 +1,24 @@
+{
+  "name": "os-contours-gpkg",
+  "version": "1.0.0",
+  "description": "process contour data in gpkg from ordnance survey using @ngageoint/geopackage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfu/os-contours-gpkg.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/hfu/os-contours-gpkg/issues"
+  },
+  "homepage": "https://github.com/hfu/os-contours-gpkg#readme",
+  "dependencies": {
+    "@ngageoint/geopackage": "^1.1.3",
+    "config": "^1.30.0",
+    "hjson": "^3.1.1"
+  }
+}
